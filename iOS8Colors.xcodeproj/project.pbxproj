@@ -19,9 +19,11 @@
 		42AD215B17C7744100026A10 /* DTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AD215A17C7744100026A10 /* DTTViewController.m */; };
 		42AD215E17C7744100026A10 /* DTTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42AD215C17C7744100026A10 /* DTTViewController.xib */; };
 		42AD216617C776AB00026A10 /* UIColor+iOS8Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AD216517C776AB00026A10 /* UIColor+iOS8Colors.m */; };
+		B04736C6C6E96C55913E9168 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E406EEC727FCCC6F7080EF /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34203FCC39CABF5E1DAC1DC4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		42AD213E17C7744100026A10 /* iOS8Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS8Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AD214117C7744100026A10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42AD214317C7744100026A10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,7 +41,9 @@
 		42AD215A17C7744100026A10 /* DTTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTViewController.m; sourceTree = "<group>"; };
 		42AD215D17C7744100026A10 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DTTViewController.xib; sourceTree = "<group>"; };
 		42AD216417C776AB00026A10 /* UIColor+iOS8Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iOS8Colors.h"; sourceTree = "<group>"; };
-		42AD216517C776AB00026A10 /* UIColor+iOS8Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iOS8Colors.m"; sourceTree = "<group>"; };
+		42AD216517C776AB00026A10 /* UIColor+iOS8Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iOS8Colors.m"; sourceTree = "<group>"; tabWidth = 4; };
+		F5E406EEC727FCCC6F7080EF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79ED22E2CEAA0A3DD1567DF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 				42AD214217C7744100026A10 /* UIKit.framework in Frameworks */,
 				42AD214417C7744100026A10 /* Foundation.framework in Frameworks */,
 				42AD214617C7744100026A10 /* CoreGraphics.framework in Frameworks */,
+				B04736C6C6E96C55913E9168 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,7 @@
 				42AD214717C7744100026A10 /* iOS8Colors */,
 				42AD214017C7744100026A10 /* Frameworks */,
 				42AD213F17C7744100026A10 /* Products */,
+				70382422F1938767B9036014 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +85,7 @@
 				42AD214117C7744100026A10 /* UIKit.framework */,
 				42AD214317C7744100026A10 /* Foundation.framework */,
 				42AD214517C7744100026A10 /* CoreGraphics.framework */,
+				F5E406EEC727FCCC6F7080EF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +119,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		70382422F1938767B9036014 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34203FCC39CABF5E1DAC1DC4 /* Pods.debug.xcconfig */,
+				F79ED22E2CEAA0A3DD1567DF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42AD216117C7744100026A10 /* Build configuration list for PBXNativeTarget "iOS8Colors" */;
 			buildPhases = (
+				D6395F4A2DD7262758F97E51 /* Check Pods Manifest.lock */,
 				42AD213A17C7744100026A10 /* Sources */,
 				42AD213B17C7744100026A10 /* Frameworks */,
 				42AD213C17C7744100026A10 /* Resources */,
+				AFA0C30F8CCB639194CE693C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +191,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFA0C30F8CCB639194CE693C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6395F4A2DD7262758F97E51 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42AD213A17C7744100026A10 /* Sources */ = {
@@ -266,6 +317,7 @@
 		};
 		42AD216217C7744100026A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34203FCC39CABF5E1DAC1DC4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS8Colors/iOS8Colors-Prefix.pch";
@@ -277,6 +329,7 @@
 		};
 		42AD216317C7744100026A10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F79ED22E2CEAA0A3DD1567DF /* Pods.release.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS8Colors/iOS8Colors-Prefix.pch";

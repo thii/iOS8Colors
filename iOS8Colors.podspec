@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => "https://github.com/thii/iOS8Colors.git", :tag => "0.1.0" }
   s.source_files  = 'iOS8Colors/UIColor+iOS8Colors.*'
+  s.dependency 'HexColors', '~> 2.2.1'
 
 end
