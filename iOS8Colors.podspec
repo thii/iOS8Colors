@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
   s.license      = 'MIT'
   s.author       = { "Doan Truong Thi" => "t@thi.im" }
-  s.platform     = :ios
+  s.platform     = :ios, '6.0'
   s.source       = { :git => "https://github.com/thii/iOS8Colors.git", :tag => "0.1.0" }
   s.source_files  = 'iOS8Colors/UIColor+iOS8Colors.*'
   s.dependency 'HexColors', '~> 2.2.1'
