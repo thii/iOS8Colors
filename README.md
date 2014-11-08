@@ -16,7 +16,7 @@ Usage is really simple. Just include `UIColor+iOS8Colors.h` & `UIColor+iOS8Color
 
     label.textColor = [UIColor iOS8redColor];
 
--> ![Screenshot](https://raw.githubusercontent.com/thii/iOS8Colors/master/screenshot.png) <-
+![Screenshot](https://raw.githubusercontent.com/thii/iOS8Colors/master/screenshot.png)
 
 ## Credits
 

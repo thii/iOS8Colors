@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = "0.1.0"
   s.summary      = "The standard iOS 8 Colors as a handy category on UIColor"
   s.homepage     = "https://github.com/thii/iOS8Colors"
-  s.screenshots  = "https://raw.github.com/thii/iOS8Colors/master/screenshot.png"
+  s.screenshots  = "https://raw.githubusercontent.com/thii/iOS8Colors/master/screenshot.png"
 
   s.license      = 'MIT'
   s.author       = { "Doan Truong Thi" => "t@thi.im" }
